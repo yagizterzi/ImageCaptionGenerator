@@ -18,10 +18,7 @@ Install the required libraries using pip:
 
 The project uses a custom dataset provided as CSV files and image folders.
 
-*   `train.csv`: Contains training data with image IDs and corresponding captions.
-*   `test.csv`: Contains test data with image IDs.
-*   `train/`: Folder containing training images.
-*   `test/`: Folder containing test images.
+You can download and use the dataset with kaggle API key 
 
 **Note:** The dataset needs to be downloaded. The notebook includes a command to download the dataset from a Kaggle competition (assuming you have the Kaggle API set up).
 
@@ -41,7 +38,7 @@ The project uses a custom dataset provided as CSV files and image folders.
     *   Fine-tune specific parts of the model (text decoder and visual backbone).
     *   Perform final training on the entire model.
     *   Generate captions for the test set.
-    *   Save the generated captions to a `submission.csv` file.
+    *   Save the generated captions to a `results.csv` file.
 
 ## Model
 
@@ -60,7 +57,7 @@ The training progress is monitored by tracking the loss over epochs.
 
 ## Evaluation
 
-The project generates captions for the images in the test set. These captions are saved to a `results.csv` file, which can be used for evaluation based on relevant metrics (e.g., BLEU, METEOR, CIDEr) if a ground truth is available for the test set or for submission to the Kaggle competition.
+The project generates captions for the images in the test set. These captions are saved to a `results.csv` file, which can be used for evaluation based on relevant metric FGD if a ground truth is available for the test set or for submission to the Kaggle competition.
 
 
 ## Contributing
@@ -69,7 +66,7 @@ If you would like to contribute to this project, please fork the repository and 
 
 ## License
 
-[Specify your chosen license here, e.g., MIT License]
+[MIT License]
 
 ## Acknowledgements
 
